@@ -3,17 +3,20 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {TimelinesComponent} from './timelines/timelines.component';
-import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
+import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimelinesComponent,
     YoutubePlaylistComponent,
-    YoutubePlayerComponent
+    YoutubePlayerComponent,
+    DictionaryPageComponent,
+    DictionaryDetailComponent
   ],
   imports: [
     BrowserModule,
