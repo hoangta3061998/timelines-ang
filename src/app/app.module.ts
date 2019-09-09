@@ -8,6 +8,11 @@ import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.co
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogEditComponent } from './blog-edit/blog-edit.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,16 @@ import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail
     YoutubePlaylistComponent,
     YoutubePlayerComponent,
     DictionaryPageComponent,
-    DictionaryDetailComponent
+    DictionaryDetailComponent,
+    BlogComponent,
+    BlogEditComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

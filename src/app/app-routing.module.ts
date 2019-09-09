@@ -6,6 +6,9 @@ import {YoutubePlaylistComponent} from './youtube-playlist/youtube-playlist.comp
 import {DictionaryPageComponent} from './dictionary-page/dictionary-page.component';
 import {DictionaryDetailComponent} from './dictionary-detail/dictionary-detail.component';
 import {AuthGuard} from './auth.guard';
+import {BlogComponent} from './blog/blog.component';
+import {BlogDetailComponent} from './blog-detail/blog-detail.component';
+import {BlogEditComponent} from './blog-edit/blog-edit.component';
 
 const routes: Routes = [
   {
@@ -31,6 +34,18 @@ const routes: Routes = [
         canActivate: [AuthGuard]
       }
     ]
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
+  },
+  {
+    path: 'blog/:id',
+    component: BlogDetailComponent
+  },
+  {
+    path: 'blog/:id/edit',
+    component: BlogEditComponent
   }
 ];
 
