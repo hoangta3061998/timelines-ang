@@ -13,6 +13,7 @@ import { BlogEditComponent } from './blog-edit/blog-edit.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from '@angular/common/http';
     DictionaryDetailComponent,
     BlogComponent,
     BlogEditComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
